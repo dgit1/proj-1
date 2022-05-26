@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flexbox navbar">
+        <img src="Playstation_Img/logo.png" alt="" class="logo" />
+        <nav>
+          <ul class="menu smallmenu">
+            <li><a href="">controllers</a></li>
+            <li><a href="">vr accessories</a></li>
+            <li><a href="">media remotes</a></li>
+            <li><a href="">others</a></li>
+          </ul>
+        </nav>
+        <img
+          src="Playstation_Img/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="myfun()"
+        />
+      </div>
+
+      <div class="row">
+        <div class="col1">
+          <h2>Lorem ipsum</h2>
+          <h3>Quas, adipisci voluptatibus a quisquam</h3>
+          <p>mollitia illo tempore at</p>
+          <h4>90</h4>
+          <button>
+            buy now <img src="playstation_img/arrow.png" alt="" />
+          </button>
+        </div>
+        <div class="col2">
+          <img src="playstation_img/controller.png" alt="" class="controller" />
+          <div class="colorbox"></div>
+          <div class="addbtn">
+            <img src="playstation_img/add.png" alt="" />
+            <p><small>add to cart</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <img src="playstation_img/fb.png" alt="" /><img
+          src="playstation_img/ig.png"
+          alt=""
+        /><img src="playstation_img/tw.png" alt="" />
+      </div>
+    </div>
+
+    <script>
+      function myfun() {
+        const menu = document.querySelector(".menu");
+
+        menu.classList.toggle("smallmenu");
+      }
+    </script>
+  </body>
+</html>
